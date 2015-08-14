@@ -11,3 +11,21 @@ CREATE TABLE kanji (
  meaning varchar(255)
 );
 ```
+
+             .----------.
+             | radicals |       .-------------.      .------------.
+             |----------|       |    kanji    |      | kanjiwords |
+      .----->| id       |       |-------------|      |------------|
+      |      | radical  |     .>| id          |<-----| kanji_id   |
+      |      | meaning  |     | | character   |      | word_id    |-----.
+      |      '----------'     | | reading_on  |      '------------'     |
+      |                       | | reading_kun |                         |
+      |   .---------------.   | | meaning     |  .------------------.   |
+      |   | kanjiradicals |   | '-------------'  |      words       |   |
+      |   |---------------|   |                  |------------------|   |
+      |   | kanji_id      |---'                  | id               |<--'
+      '---| radical_id    |                      | kanji_reading    |
+          '---------------'                      | hiragana_reading |
+                                                 | meaning          |
+                                                 | length           |
+                                                 '------------------'
