@@ -1,7 +1,8 @@
-# Convert JMdict ( + kanjidic2.xml and kradfile-u) into SQLite database
+## Convert JMdict ( + kanjidic2.xml and kradfile-u) into SQLite database
 
-## Database structure
+### Database structure
 
+```sql
 CREATE TABLE kanji (
  id integer,
  character varchar(1),
@@ -9,3 +10,4 @@ CREATE TABLE kanji (
  reading_kun varchar(255),
  meaning varchar(255)
 );
+```
