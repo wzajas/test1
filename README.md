@@ -6,21 +6,20 @@ Only words that have kanji in them go into database, but it's fairly simple to m
 
 ### Database structure
 
-             .----------.
-             | radicals |       .-------------.      .------------.
-             |----------|       |    kanji    |      | kanjiwords |
-      .----->| id       |       |-------------|      |------------|
-      |      | radical  |     .>| id          |<-----| kanji_id   |
-      |      | meaning  |     | | character   |      | word_id    |-----.
-      |      '----------'     | | reading_on  |      '------------'     |
-      |                       | | reading_kun |                         |
-      |   .---------------.   | | meaning     |  .------------------.   |
-      |   | kanjiradicals |   | '-------------'  |      words       |   |
-      |   |---------------|   |                  |------------------|   |
-      |   | kanji_id      |---'                  | id               |<--'
-      '---| radical_id    |                      | kanji_reading    |
-          '---------------'                      | hiragana_reading |
-                                                 | meaning          |
+             .----------.       .-------------.      .------------.
+             | radicals |       |    kanji    |      | kanjiwords |
+             |----------|       |-------------|      |------------|
+      .----->| id       |     .>| id          |<-----| kanji_id   |
+      |      | radical  |     | | character   |      | word_id    |-----.
+      |      | meaning  |     | | reading_on  |      '------------'     |
+      |      '----------'     | | reading_kun |                         |
+      |                       | | meaning     |  .------------------.   |
+      |   .---------------.   | '-------------'  |      words       |   |
+      |   | kanjiradicals |   |                  |------------------|   |
+      |   |---------------|   |                  | id               |<--'
+      '---| kanji_id      |---'                  | kanji_reading    |
+          | radical_id    |                      | hiragana_reading |
+          '---------------'                      | meaning          |
                                                  | length           |
                                                  '------------------'
 
