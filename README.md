@@ -33,7 +33,9 @@ CREATE TABLE kanji (
 ### Get files
 
 kradfile-u http://www.kanjicafe.com/downloads/kradfile-u.gz
+
 JMdict ftp://ftp.monash.edu.au/pub/nihongo/JMdict.gz
+
 kanjidic2.xml http://www.edrdg.org/kanjidic/kanjidic2.xml.gz
 
 #### Unpack
