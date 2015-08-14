@@ -58,5 +58,6 @@ perl generate_dict.pl
 
 `
 sqlite dictionary.db < database_structure.sql
+
 sqlite dictionary.db < import.sql 
 `
