@@ -38,9 +38,9 @@ JMdict ftp://ftp.monash.edu.au/pub/nihongo/JMdict.gz
 
 kanjidic2.xml http://www.edrdg.org/kanjidic/kanjidic2.xml.gz
 
-`
+```
 wget http://www.kanjicafe.com/downloads/kradfile-u.gz ftp://ftp.monash.edu.au/pub/nihongo/JMdict.gz http://www.edrdg.org/kanjidic/kanjidic2.xml.gz
-`
+```
 
 #### Unpack
 
@@ -56,8 +56,7 @@ perl generate_dict.pl
 
 ### Import dumps into sqlite
 
-`
+```
 sqlite dictionary.db < database_structure.sql
-
 sqlite dictionary.db < import.sql 
-`
+``
