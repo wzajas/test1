@@ -1,16 +1,10 @@
-## Convert JMdict ( + kanjidic2.xml and kradfile-u) into SQLite database
+## Convert JMdict + kanjidic2.xml + kradfile-u into SQLite database
+
+### Content
+
+Only words that have kanji in them go into database, but it's fairly simple to modify the script to generate full dictionary.
 
 ### Database structure
-
-```sql
-CREATE TABLE kanji (
- id integer,
- character varchar(1),
- reading_on varchar(255),
- reading_kun varchar(255),
- meaning varchar(255)
-);
-```
 
              .----------.
              | radicals |       .-------------.      .------------.
