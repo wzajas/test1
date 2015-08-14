@@ -40,7 +40,7 @@ kanjidic2.xml http://www.edrdg.org/kanjidic/kanjidic2.xml.gz
 
 #### Unpack
 
-gzip -d *gz
+> gzip -d *gz
 
 ### Generate dumps
 
