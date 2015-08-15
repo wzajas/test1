@@ -13,8 +13,8 @@ It takes about 1.4 G of memory to process files.
            .----------.       .-------------.      .------------.
            | radicals |       |    kanji    |      | kanjiwords |
            |----------|       |-------------|      |------------|
-           | id       |     .>| id          |<-----| kanji_id   |
-    .----->| radical  |     | | character   |      | word_id    |------.
+    .----->| id       |     .>| id          |<-----| kanji_id   |
+    |      | radical  |     | | character   |      | word_id    |------.
     |      | type     |     | | reading_on  |      '------------'      |
     |      | meaning  |     | | reading_kun |   .------------------.   |
     |      '----------'     | | meaning     |   |      words       |   |
