@@ -17,7 +17,7 @@ Radicals printed below character are separated into two types:
 1. Radicals
 2. Parts
 
-Each character has (AFAIK) only one base radical, but you can also identify it by parts (http://jisho.org/search/%E6%A0%A1%20%23kanji).
+Each character has (AFAIK) only one base radical, but you can also identify it by parts (see http://jisho.org/search/%E6%A0%A1%20%23kanji).
 
 There are three variable that control how the result looks like:
 
@@ -27,6 +27,7 @@ There are three variable that control how the result looks like:
 
 ### Why ?
 
-I think the best method of learning kanji it to try reading something. When I tried that with books and articles I (obviously) couldn't control what characters are going to appear in them, usually finding only two or three which I knew. So I figured the only thing I can do is get dictionary and choose words that use kanji that I know, write down rest of characters, find their meaning, add them to list, find words using new list, and so on.
+I think the best method of learning kanji it to try reading something. When I tried that with books and articles I (obviously) couldn't control what characters are going to appear in them, usually finding only two or three which I knew. So I figured the only thing I can do is get dictionary and choose words that use kanji that I know, write down rest of them, find their meaning, add them to list, find words using new list, and so on.
 
-I found something simmilar in tagainijisho and based template on it's "Printing and export" feature.
+Template is based on "print" option from Tagainijisho.
+
