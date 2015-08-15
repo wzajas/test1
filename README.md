@@ -6,22 +6,21 @@ Only words that have kanji in them go into database, but it's fairly simple to m
 
 ### Database structure
 
-             .----------.       .-------------.      .------------.
-             | radicals |       |    kanji    |      | kanjiwords |
-             |----------|       |-------------|      |------------|
-      .----->| id       |     .>| id          |<-----| kanji_id   |
-      |      | radical  |     | | character   |      | word_id    |-----.
-      |      | meaning  |     | | reading_on  |      '------------'     |
-      |      '----------'     | | reading_kun |                         |
-      |                       | | meaning     |  .------------------.   |
-      |   .---------------.   | '-------------'  |      words       |   |
-      |   | kanjiradicals |   |                  |------------------|   |
-      |   |---------------|   |                  | id               |<--'
-      '---| kanji_id      |---'                  | kanji_reading    |
-          | radical_id    |                      | hiragana_reading |
-          '---------------'                      | meaning          |
-                                                 | length           |
-                                                 '------------------'
+           .----------.       .-------------.      .------------.
+           | radicals |       |    kanji    |      | kanjiwords |
+           |----------|       |-------------|      |------------|
+           | id       |     .>| id          |<-----| kanji_id   |
+    .----->| radical  |     | | character   |      | word_id    |------.
+    |      | type     |     | | reading_on  |      '------------'      |
+    |      | meaning  |     | | reading_kun |   .------------------.   |
+    |      '----------'     | | meaning     |   |      words       |   |
+    |   .---------------.   | '-------------'   |------------------|   |
+    |   | kanjiradicals |   |                   | id               |<--'
+    |   |---------------|   |                   | kanji_reading    |
+    |   | kanji_id      |---'                   | hiragana_reading |
+    '---- radical_id    |                       | meaning          |
+        '---------------'                       | length           |
+                                                '------------------'
 
 ### Get files
 
