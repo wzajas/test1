@@ -4,6 +4,10 @@
 
 Only words that have kanji in them go into database, but it's fairly simple to modify the script to generate full dictionary.
 
+### Word of warning
+
+It takes about 1.4 G of memory to process files.
+
 ### Database structure
 
            .----------.       .-------------.      .------------.

@@ -24,3 +24,9 @@ There are three variable that control how the result looks like:
 1. $words_per_character - how many example words print with each character.
 2. $print_radicals - show/hide radicals under characters.
 3. $print_suggested_kanji - count kanji that appear in words (excluding @mykanji and @iknokanji) and print them into STDERR.
+
+### Why ?
+
+I think the best method of learning kanji it to try reading something. When I tried that with books and articles I (obviously) couldn't control what characters are going to appear in them, usually finding only two or three which I knew. So I figured the only thing I can do is get dictionary and choose words that use kanji that I know, write down rest of characters, find their meaning, add them to list, find words using new list, and so on.
+
+I found something simmilar in tagainijisho and based template on it's "Printing and export" feature.
