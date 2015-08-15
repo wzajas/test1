@@ -18,7 +18,7 @@ Only words that have kanji in them go into database, but it's fairly simple to m
     |   | kanjiradicals |   |                   | id               |<--'
     |   |---------------|   |                   | kanji_reading    |
     |   | kanji_id      |---'                   | hiragana_reading |
-    '---- radical_id    |                       | meaning          |
+    '---| radical_id    |                       | meaning          |
         '---------------'                       | length           |
                                                 '------------------'
 
